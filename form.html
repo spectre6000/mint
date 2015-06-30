@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="reset.css" >
+    <link rel="stylesheet" type="text/css" href="form.css" >
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="resources/logo.svg">
+      <nav>
+        <p id="sign_up">Sign up</p>
+        <div class="vert" id="short"></div>
+        <p id="log_in">Log in</p>
+      </nav>
+    </header>
+    <section>
+      <form>
+        <legend class="form_element">Create a new account</legend>
+        <label for="email" class="form_element">Your Email</label>
+          <input type="email" name="email" id="email" class="form_element" required autofocus>
+        <label for="confirm_email" class="form_element">Confirm Email</label>
+          <input type="email" name="confirm_email" id="confirm_email"  class="form_element" required>
+        <label for="country" class="form_element">Country</label>
+          <select name="country" class="form_element" required>
+            <option value="US" selected>United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="UAE">United Arab Emirates</option>
+          </select>
+        <label for="zip" class="form_element">Zip Code</label>
+          <input type="number" name="zip" id="zip" class="form_element" required>
+        <label for="password" class="form_element">Password</label>
+          <input type="password" name="password" id="password" class="form_element" required> 
+        <label for="confirm_password" class="form_element">Confirm Password</label>
+          <input type="password" name="confirm_password" id="confirm_password" class="form_element" required> 
+        <input type="checkbox" name="terms" id="checkbox" class="form_element" required>
+        <label class="form_element" id="box_label">Yes, I agree to the Mint Terms of Use.</label>
+        <input type="submit" name="submit" id="button" class="form_element" value="SIGN UP">
+      </form>
+      <aside>
+        <ul>
+          <lh>Why you'll love it</lh>
+          <li>See all your accounts in one place</li>
+          <li>Set a budget and pay your own debt</li>
+          <li>Find the best ways to grow your money</li>
+          <li>Stay safe and secure</li>
+        </ul>
+      </aside>
+    </section>
+    <footer>
+      <div id="footer_top_nav" class="footer_text">
+        <div id="support" class="foot_nav">Support Community</div>
+        <div id="terms" class="foot_nav">Terms of Use</div>
+        <div id="privacy" class="foot_nav">Privacy</div>
+        <div id="legal" class="foot_nav">Legal and Trademark Notices</div>
+        <div id="about" class="foot_nav">About Intuit</div>
+      </div>
+      <div id="other_logos">
+        <img id="norton" src="resources/norton.svg">
+        <img id="trust" src="resources/trust.svg">
+      </div>
+      <div id="footer_bottom_nav" class="footer_text">
+        <p>&#169; 2015 Intuit, Inc. | ph6887.14 - spa54.10</p>
+      </div>
+    </footer>
+  </body>
+</html>
