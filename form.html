@@ -14,27 +14,30 @@
       </nav>
     </header>
     <section>
-      <form>
-        <legend class="form_element">Create a new account</legend>
-        <label for="email" class="form_element">Your Email</label>
-          <input type="email" name="email" id="email" class="form_element" required autofocus>
-        <label for="confirm_email" class="form_element">Confirm Email</label>
-          <input type="email" name="confirm_email" id="confirm_email"  class="form_element" required>
-        <label for="country" class="form_element">Country</label>
-          <select name="country" class="form_element" required>
-            <option value="US" selected>United States</option>
-            <option value="UK">United Kingdom</option>
-            <option value="UAE">United Arab Emirates</option>
-          </select>
-        <label for="zip" class="form_element">Zip Code</label>
-          <input type="number" name="zip" id="zip" class="form_element" required>
-        <label for="password" class="form_element">Password</label>
-          <input type="password" name="password" id="password" class="form_element" required> 
-        <label for="confirm_password" class="form_element">Confirm Password</label>
-          <input type="password" name="confirm_password" id="confirm_password" class="form_element" required> 
-        <input type="checkbox" name="terms" id="checkbox" class="form_element" required>
-        <label class="form_element" id="box_label">Yes, I agree to the Mint Terms of Use.</label>
-        <input type="submit" name="submit" id="button" class="form_element" value="SIGN UP">
+      <form id="form">
+        <fieldset>
+          <legend class="form_element">Create a new account</legend>
+          <label for="email" class="form_element">Your Email</label>
+            <input type="email" name="email" id="email" class="form_element"  autofocus>
+          <label for="confirm_email" class="form_element">Confirm Email</label>
+            <input type="email" name="confirm_email" id="confirm_email"  class="form_element" >
+          <label for="country" class="form_element">Country</label>
+            <select name="country" class="form_element" id="country" >
+              <option value=""></option>
+              <option value="US">United States</option>
+              <option value="UK">United Kingdom</option>
+              <option value="UAE">United Arab Emirates</option>
+            </select>
+          <label for="zip" class="form_element">Zip Code</label>
+            <input type="number" name="zip" id="zip" class="form_element" >
+          <label for="password" class="form_element">Password</label>
+            <input type="password" name="password" id="password" class="form_element" > 
+          <label for="confirm_password" class="form_element">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" class="form_element" > 
+          <input type="checkbox" name="terms" id="checkbox" class="form_element" >
+          <label class="form_element" id="box_label">Yes, I agree to the Mint Terms of Use.</label>
+          <input type="submit" name="submit" id="button" class="form_element" value="SIGN UP">
+        </fieldset>  
       </form>
       <aside>
         <ul>
@@ -62,5 +65,9 @@
         <p>&#169; 2015 Intuit, Inc. | ph6887.14 - spa54.10</p>
       </div>
     </footer>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="formValidation.js"></script>
   </body>
 </html>

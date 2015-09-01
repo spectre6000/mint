@@ -43,14 +43,14 @@ header {
       font-family: heavyFont;
       font-size: .95em;
       color: #333;
-      top: 80px;
+      top: 110px;
       right: 77px;
     }
 
     #short {
       position: relative;
       height: 19px;
-      top: 60px;
+      top: 90px;
       right: 8px;
     }
 
@@ -58,7 +58,7 @@ header {
       position: relative;
       font-family: normalFont;
       font-size: .95em;
-      top: 46px;
+      top: 76px;
       left: 2px;
     }
 
@@ -71,7 +71,7 @@ section {
   form {
     float: left;
     position: relative;
-    top: 45px;
+    top: 30px;
     left: 50px;
   }
 
@@ -208,4 +208,16 @@ footer {
     font-size: .7em;
     top: 53px;
     left: 242px;
+  }
+
+  .error {
+    color: #F22;
+    border-color: #F22;
+  }
+
+  #email-error, #confirm_email-error, #country-error, #zip-error, #password-error, #confirm_password-error, #terms-error {
+    position: relative;
+    top: -25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
